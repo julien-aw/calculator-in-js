@@ -2,6 +2,30 @@
 
 .keys{
 	display: grid;
-	grid-template-columns: 50px 50px 50px 50px 70px;
-	grid-template-rows: 1fr 1fr 1fr;
+	width: 500px;
+	grid-template-columns: 25% 25% 25% 25%;
+	grid-template-rows: 50px 50px 50px 50px 50px;
+	grid-template-areas: 
+	"ac div times minus"
+	"7 8 9 plus"
+	"4 5 6 plus"
+	"1 2 3 enter"
+	"z z dot enter";
+
 }
+
+
+#ac{
+	grid-area: ac;
+}
+#enter{
+	grid-area: enter;
+}
+#plus{
+	grid-area: plus;
+}
+#z{
+	grid-area: z;
+}
+
+
